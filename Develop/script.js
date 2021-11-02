@@ -9,7 +9,7 @@ var generateBtn = document.querySelector("#generate");
 
 
 
-    function writePassword() {
+function generatePassword() {
     var lwrcase = "abcdefghijklmnopqrstuvwxyz";
     var upprcase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var numbers = "1234567890";
@@ -50,15 +50,19 @@ if (qryspclchrcter) {
 }
 
 if (!qrylwrcase && !qryupprcase && !qrynumbers && !qryspclchrcter
-){
+) {
   return alert("Please select at least one criteria!");
-  
+}
+
+for (let i = 0; i < pwlength; i++) {
+
+  password +=avlblcharctrs[Math.floor(Math.random () * avlblcharctrs.length)];
+}
+return password;
 }
 
 
-
-
-
+function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
