@@ -28,7 +28,10 @@ else {
   return "";
 }
 
- 
+var qrylwrcase = confirm("Would you like to use lowercase letters in your password?")
+var qryupprcase = confirm("Would you like to use uppercase letters in your password?")
+var qrynumbers = confirm("Would you like to use numbers in your password (0-9)?")
+var qryspclchrcter = confirm("Would you like to use special characters such as '!@#$%^&*()_-+=[]{};:,.<>/?`~' in your password?")
 
 
 
