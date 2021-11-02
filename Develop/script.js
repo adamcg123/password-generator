@@ -33,13 +33,27 @@ var qryupprcase = confirm("Would you like to use uppercase letters in your passw
 var qrynumbers = confirm("Would you like to use numbers in your password (0-9)?")
 var qryspclchrcter = confirm("Would you like to use special characters such as '!@#$%^&*()_-+=[]{};:,.<>/?`~' in your password?")
 
+if (qrylwrcase) {
+  avlblcharctrs += lwrcase
+}
 
+if (qryupprcase) {
+  avlblcharctrs += upprcase
+}
 
+if (qrynumbers) {
+  avlblcharctrs += numbers
+}
 
+if (qryspclchrcter) {
+  avlblcharctrs += spclchrcter
+}
 
-
-
-
+if (!qrylwrcase && !qryupprcase && !qrynumbers && !qryspclchrcter
+){
+  return alert("Please select at least one criteria!");
+  
+}
 
 
 
